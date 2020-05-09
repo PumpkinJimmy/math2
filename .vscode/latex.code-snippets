@@ -64,5 +64,11 @@
 		"prefix": "d",
 		"body": "\\mathrm{d}",
 		"description": "For dx,dy",
+	},
+	"Determinator":{
+		"scope": "latex",
+		"prefix": "det",
+		"body": ["\\left| \\begin{array}{cccc}", "$1", "\\end{array}\\right| $0"],
+		"description": "Determinator Input"
 	}
 }
