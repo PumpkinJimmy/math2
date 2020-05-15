@@ -6,6 +6,21 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
 	// Placeholders with the same ids are connected.
 	// Example:
+	"article":{
+		"scope": "latex",
+		"prefix": "art",
+		"body": [
+			"\\documentclass[UTF8]{ctexart}",
+			"\\usepackage{amsmath}",
+			"\\title{$1}",
+			"\\author{邓贤杰}",
+			"\\date{\\today}",
+			"\\begin{document}",
+			"    \\maketitle",
+			"    $0",
+			"\\end{document}"
+		]
+	},
 	"beg":{
 		"scope": "latex",
 		"prefix": "beg",
@@ -47,6 +62,12 @@
 		"prefix": "iint",
 		"body": "\\iint \\limits_D",
 		"description": "For iint"
+	},
+	"iiint":{
+		"scope": "latex",
+		"prefix": "iiint",
+		"body": "\\iiint \\limits_{$1} $0",
+		"description": "For iiint"
 	},
 	"sqrt":{
 		"scope": "latex",

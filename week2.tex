@@ -1,0 +1,39 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\title{第二州作业}
+\author{邓贤杰}
+\date{\today}
+\begin{document}
+    \maketitle
+    \paragraph*{4}
+    令$D=\{(x,y)| x^2 + y^2 \le 4\}$
+    \begin{align*}
+        &\iiint \limits_{\Omega} z \mathrm{d}x \mathrm{d}y \mathrm{d}z \\
+        =& \iint \limits
+        _D \mathrm{d}x \mathrm{d}y \int_{0}^{x^2+y^2} z \mathrm{d}z \\
+        =& \int_{0}^{2\pi} \mathrm{d}\theta \int_{0}^{2} \frac{r^5}{2} \mathrm{d}r \\
+        =& \int_{0}^{2\pi} \frac{16}{3} \mathrm{d}\theta \\
+        =& \frac{32\pi}{3}  
+    \end{align*}
+\paragraph*{6}
+令$D=\{(x,y)| x^2 + y^2 \le 1\}$
+\begin{align*}
+    &\iiint \limits_{\Omega} \mathrm{d}V \\
+    =& \iint \limits_D \mathrm{d}r \mathrm{d}\theta \int_{3r}^{3} r^3 \mathrm{d}z \\
+    =& \iint \limits_D r^3(3 - 3r)\mathrm{d}r \mathrm{d}\theta \\
+    =& \int_{0}^{2\pi} \mathrm{d}\theta \int_{0}^{1} (3r^3 - 3r^4)\mathrm{d}r \\
+    =& \int_{0}^{2\pi} \frac{3}{20} \mathrm{d}\theta \\
+    =& \frac{3\pi}{10} 
+\end{align*}
+\paragraph*{8}
+令$D=\{(x,y)| x^2 + y^2 \le 1\}$
+\begin{align*}
+    &\iiint \limits_{\Omega} (x^2+z^2)\mathrm{d}V \\
+    =& \iint \limits_D \mathrm{d}x \mathrm{d}y \int_{x^2+y^2}^{1} (x^2+z^2)\mathrm{d}z \\
+    =& \iint \limits_D \left((x^2+\frac{1}{3} )-[x^2(x^2+y^2)+\frac{(x^2+y^2)^3}{3}]\right)\mathrm{d}x \mathrm{d}y \\
+    =& \iint \limits_D r(r^2cos^2\theta - r^4 cos^2\theta - \frac{r^6}{3} + \frac{1}{3}) \mathrm{d}r \mathrm{d}\theta \\
+    =& \int_{0}^{2\pi} \mathrm{d}\theta\int_{0}^{1} \left(r^3cos^2\theta-r^5cos^2\theta - \frac{r^7}{3} + \frac{r}{3} \right) \mathrm{d}r \\
+    =& \frac{1}{3} \int_{0}^{2\pi} (\frac{cos^2\theta}{4} + \frac{3}{8} ) \mathrm{d}\theta \\
+    =& \frac{\pi}{3}
+\end{align*}
+\end{document}
