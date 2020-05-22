@@ -1,0 +1,193 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\title{第三周作业}
+\author{邓贤杰}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \paragraph*{P60.4}
+    \begin{align*}
+        &\int_{L}^{} \frac{1}{x^2+y^2+z^2} \mathrm{d}s \\
+        =& \int_{0}^{2\pi} \frac{1}{a^2 cos^2t + a^2 sin^2t +b^2t^2} \sqrt{a^2sin^2+a^2cos^2+b^2} \mathrm{d}t \\
+        =& \int_{0}^{2\pi} \frac{1}{a^2+b^2t^2} \sqrt{a^2+b^2} \mathrm{d}t \\ 
+        =& \frac{\sqrt{a^2+b^2}}{ab} \int_{0}^{2\pi} \frac{1}{1+\frac{b^2t^2}{a^2} }\mathrm{d}\left(\frac{bt}{a}\right) \\
+        =& \frac{\sqrt{a^2+b^2}}{ab} arctan \frac{bt}{a} \big|_{0}^{2\pi} \\
+        =& \frac{\sqrt{a^2+b^2}}{ab} arctan \frac{2b\pi}{a}
+    \end{align*}
+    \paragraph*{P60.6}
+
+    令
+    \begin{equation}
+     \begin{cases}
+         x = acost \\
+        y = bsint \\
+     \end{cases}
+    \end{equation}
+
+    则
+    \begin{align*}
+        &\int_{L} xy \mathrm{d}s
+    \end{align*}
+    \paragraph*{P60.7}
+
+    由
+    \begin{align*}
+        ds =& \sqrt{x'(t)^2 + y'(t)^2} dt \\
+        =& |a|t \mathrm{d}t  
+    \end{align*}
+
+    有
+    \begin{align*}
+        &\int_{L} \sqrt{x^2+y^2} \mathrm{d}s \\
+        =& \int_{0}^{2\pi} a^2\sqrt{1+t^2}t \mathrm{d}t \\
+        =& \int_{0}^{2\pi} \frac{a^2}{2} \sqrt{1+t^2} \mathrm{d}(1+t^2) \\
+        =& \frac{a^2}{3} (1+4\pi^2)^{\frac{3}{2} } - \frac{a^2}{3} 
+    \end{align*}
+    \paragraph*{P60.8}
+    \begin{align*}
+        &\int_{L} (x+\sqrt{y} -z^5)\mathrm{d}s \\
+        =& \int_{L1}^{} 2x \mathrm{d}s + \int_{L2}^{} 2-z^5 \mathrm{d}s \\
+    \end{align*}
+
+    其中
+    \begin{align*}
+        &\int_{L1}^{} 2x \mathrm{d}s \\
+        =& \int_{0}^{1} 2x \sqrt{1+(2x)^2} \mathrm{d}x \\
+        =& \frac{1}{4} \int_{0}^{1} \sqrt{4x^2+1} \mathrm{d}(x^2) \\
+        =& \frac{1}{6} (4x^2+1)^{\frac{3}{2} } \big|_{0}^{1} \\
+        =& \frac{5\sqrt{5}-1}{6} 
+    \end{align*}
+    \begin{align*}
+        &\int_{L2}^{} 2-z^5 \mathrm{d}s \\
+        =& \int_{0}^{1} (2-z^5)\mathrm{d}z \\
+        =& (2z-\frac{z^6}{6} )\big|_{0}^{1} \\
+        =&\frac{11}{6} 
+    \end{align*}
+
+    所以所求为\[
+        \frac{5\sqrt{5}+10}{6} 
+    \]
+    \paragraph*{P70.1}
+    \subparagraph*{(1)}
+
+    有
+    \begin{align*}
+        L:y=\frac{x}{2} 
+    \end{align*}
+
+    故
+    \begin{align*}
+        &\int_{L} 2xy \mathrm{d}x - x^2 \mathrm{d}y \\
+        =& \int_{0}^{2} \frac{x^2}{2} \mathrm{d}x \\
+        =& \frac{4}{3} 
+    \end{align*}
+    \subparagraph*{(2)}
+    有
+    \begin{align*}
+        L:y=\frac{x^2}{4} 
+    \end{align*}
+
+    故
+    \begin{align*}
+        &\int_{L} 2xy \mathrm{d}x - x^2 \mathrm{d}y \\
+        =& \int_{0}^{2} (2x\cdot \frac{x^2}{4} \mathrm{d}x - x^2 \cdot \frac{x}{2} \mathrm{d}x) \\
+        = 0
+    \end{align*}
+    \subparagraph*{(3)}
+    有
+    \begin{equation*}
+        \begin{cases}
+            L_1:y=0\\
+            L_2:x=2\\
+        \end{cases}
+    \end{equation*}
+
+    故
+    \begin{align*}
+        &\int_{L} 2xy \mathrm{d}x - x^2 \mathrm{d}y \\
+        =& \int_{L1} 2xy \mathrm{d}x - x^2 \mathrm{d}y + \int_{L2} 2xy \mathrm{d}x - x^2 \mathrm{d}y \\
+        =& \int_{0}^{1} -4y \mathrm{d}y \\
+        =& -4
+    \end{align*}
+
+    \subparagraph*{(4)}
+    有
+    \begin{equation}
+        \begin{cases}
+            L_1:x=0 \\
+            L_2:y=1 \\
+        \end{cases}
+    \end{equation}
+
+    故
+    \begin{align*}
+        &\int_{L} 2xy \mathrm{d}x - x^2 \mathrm{d}y \\
+        =& \int_{L1} 2xy \mathrm{d}x - x^2 \mathrm{d}y + \int_{L2} 2xy \mathrm{d}x - x^2 \mathrm{d}y \\
+        =&\int_{0}^{2} 2x \mathrm{d}x \\
+        =& 4
+    \end{align*}
+    \paragraph*{P71.4}
+    \subparagraph*{(1)}
+    
+    \begin{align*}
+        &\int_{L}^{} (x^2-2xy) \mathrm{d}x + (y^2-2xy) \mathrm{d}y \\
+        =& \int_{-1}^{1} x^2-2x^5+4x^{11}-8x^8 \\
+        =& -\frac{10}{9} 
+    \end{align*}
+
+    \subparagraph*{(2)}
+    \begin{align*}
+        &\int_{L}^{} (x^2-2xy) \mathrm{d}x + (y^2-2xy) \mathrm{d}y \\
+        =& \int_{-1}^{1} (x^2-2x) \mathrm{d}x \\
+        =& \frac{2}{3} 
+    \end{align*}
+\paragraph*{P71.5}
+\begin{align*}
+    &\oint_{L} y \mathrm{d}x + z \mathrm{d}y + x \mathrm{d}z \\
+    =& \int_{0}^{2\pi} (-a^2sin^2t + abtcost + abcost) \mathrm{d}t \\
+    & \int_{0}^{2\pi} -a^2sin^2t \mathrm{d}t \\
+    =& \frac{a^2}{4} (sin2t - 2t)\big|_{0}^{2\pi} = -a^2\pi  \\
+    & \int_{0}^{2\pi} abtcost  \mathrm{d}t \\
+    =& abtsint \big|_{0}^{2\pi}  - ab \int_{0}^{2\pi} sint \mathrm{d}t \\
+    =& abcost \big|_{0}^{2\pi} \\
+    =& 0 \\
+     & \int_{0}^{2\pi}abcost \mathrm{d}t \\
+    =& absint \big|_{0}^{2\pi} = 0
+\end{align*}
+
+故所求为$-\pi a^2$
+\paragraph*{P71.6}
+令
+\begin{equation*}
+    \begin{cases}
+        L_1: y=-x ,x \in [-1, 0] \\
+        L_2: y=x, x \in (0, 2]
+    \end{cases}
+\end{equation*}
+
+故
+\begin{align*}
+  &\int_{L}^{} (x^2+y^2) \mathrm{d}x + (x^2 - y) \mathrm{d}y \\
+  =& \int_{L_1}^{} (x^2+y^2) \mathrm{d}x + (x^2 - y) \mathrm{d}y + 
+  \int_{L_2}^{} (x^2+y^2) \mathrm{d}x + (x^2 - y) \mathrm{d}y \\
+  =& \int_{-1}^{0} (x^2-x) \mathrm{d}x + \int_{0}^{2} (3x^3 - x)\mathrm{d}x \\
+  =& \frac{41}{6} 
+\end{align*}
+\paragraph*{P71.8}
+\begin{align*}
+    &\int_{L}^{} (x^4-z^2)\mathrm{d}x+2xy^2 \mathrm{d}y - y \mathrm{d}z \\
+    =& \int_{0}^{1} ((t^4-t^6)\mathrm{d}t + 4t^6 \mathrm{d}t - 3t^4 \mathrm{d}t) \\
+    =& \int_{0}^{1} (-2t^4+3t^6) \mathrm{d}t \\
+    =& \frac{1}{35} 
+\end{align*}
+\paragraph*{P88.2(2)}
+\begin{align*}
+    S =& \oint_{L_+} x \mathrm{d}y -y \mathrm{d}x \\
+    =& 
+\end{align*}
+\paragraph*{4}
+\subparagraph*{(1)}
+\begin{align*}
+\end{align*}
+\end{document}
