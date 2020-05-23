@@ -91,5 +91,15 @@
 		"prefix": "det",
 		"body": ["\\left| \\begin{array}{cccc}", "$1", "\\end{array}\\right| $0"],
 		"description": "Determinator Input"
+	},
+	"cos": {
+		"scope": "latex",
+		"prefix": "cos",
+		"body": "\\cos "
+	},
+	"sin": {
+		"scope": "latex",
+		"prefix": "sin",
+		"body": "\\sin "
 	}
 }
