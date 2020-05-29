@@ -1,0 +1,49 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\title{第四周作业}
+\author{邓贤杰}
+\date{\today}
+\begin{document}
+    \maketitle
+\paragraph*{3}
+\begin{align*}
+    z_x &= -\frac{x}{\sqrt{a^2-x^2-y^2}} \\
+    z_y &= -\frac{y}{\sqrt{a^2-x^2-y^2}} 
+\end{align*}
+
+故
+\begin{align*}
+    \mathrm{d}S &= \sqrt{1+z_x^2+z_y^2} \mathrm{d}\sigma \\
+    &= \sqrt{\frac{a^2}{a^2-x^2-y^2} } 
+\end{align*}
+
+故令$x=r\cos \theta,y=r\sin \theta ,D=\{(r,\theta)| r \le a\} $，有
+\begin{align*}
+    &\iint \limits_S (x+y+z)\mathrm{d}S \\
+    =& \iint \limits_D ar\left( \frac{r(\sin \theta + \cos \theta)}{\sqrt{a^2-r^2} }+1  \right) \mathrm{d}r \mathrm{d}\theta\\
+    =& \int_{0}^{a} \mathrm{d}r \int_{0}^{2\pi} 
+    ar\left( \frac{r(\sin \theta + \cos \theta)}{\sqrt{a^2-r^2} }+1  \right) \mathrm{d}\theta \\
+    =& \int_{0}^{a} 2a\pi r \mathrm{d}r \\
+    =& \pi a^3
+\end{align*}
+\paragraph*{7}
+\begin{align*}
+    x_u =& \cos v , x_v= -u \sin v\\
+    y_u =& \sin v , y_v= u \cos v \\
+    z_u =& 0, z_v = 1 \\
+    E =& x_u^2 +y_u^2+z_u^2 =1\\
+    F =& x_u x_v + y_u y_v + z_u z_v = 0\\
+    G =& x_v^2 + y_v^2 + z_v^2 = u^2 + 1\\
+    \mathrm{d}S =& \sqrt{EG-F^2} \mathrm{d}u \mathrm{d}v = \sqrt{u^2+1} \mathrm{d}u \mathrm{d}v\\
+\end{align*}
+
+故令$D=\{(u,v)| 0 \le u \le a, 0 \le v \le 2\pi\}$，有
+\begin{align*}
+    &\iint \limits_S yz \mathrm{d}S \\
+    =& \iint \limits_D uv\sin v \sqrt{u^2+1} \mathrm{d}u \mathrm{d}v \\
+    =& \int_{0}^{a} \mathrm{d}u \int_{0}^{2\pi} uv \sin v \sqrt{u^2+1} \mathrm{d}v \\ 
+    =& \int_{0}^{a} u \sqrt{u^2+1} \mathrm{d}u (\int_{0}^{2\pi} \cos v - v \cos v \big|_{0}^{2\pi} ) \\
+    =& -\pi \int_{0}^{a} \sqrt{u^2+1} \mathrm{d}(u^2+1) \\
+    =& \frac{2\pi}{3} [1- (a^2+1)^{\frac{3}{2} }]
+\end{align*}
+\end{document}
