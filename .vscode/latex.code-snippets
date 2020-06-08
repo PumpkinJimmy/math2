@@ -101,5 +101,10 @@
 		"scope": "latex",
 		"prefix": "sin",
 		"body": "\\sin "
+	},
+	"partial": {
+		"scope": "latex",
+		"prefix": "par",
+		"body": "\\partial"
 	}
 }
