@@ -49,9 +49,9 @@
     \begin{align*}
         y' = (x+y+2)^2
     \end{align*}
-    令$t=x+y+2$，则$t't'=1+y'$，则
+    令$t=x+y+2$，则$t'=1+y'$，则
     \begin{align*}
-        t'-1 &= t^2
+        t'-1 &= t^2\\
         \frac{\mathrm{d}t}{t^2+1} &= \mathrm{d}x \\ 
         \arctan t &= x + C \\
         \arctan (x+y+2) &= x+C
@@ -153,8 +153,8 @@
     \paragraph*{16}
     \subparagraph*{(4)}
     \begin{align*}
-        \frac{\partial (3x^2y+2xy+y^3)}{\partial y} - 
-        \left. \left(\frac{\partial (x^2+y^2)}{\partial x} \right)\middle/ (x^2+y^2) = 3 \right.
+        \left(\frac{\partial (3x^2y+2xy+y^3)}{\partial y} - 
+        \left. \frac{\partial (x^2+y^2)}{\partial x} \right)\middle/ (x^2+y^2) = 3 \right.
     \end{align*}
     
     故得积分因子$\mu (x) = e^{3x}$
@@ -162,5 +162,18 @@
     从而有通积分
     \begin{align*}
         e^{3x}(3x^2y+y^3) = C
+    \end{align*}
+
+    \subparagraph*{(5)}
+    \begin{align*}
+        \left. \left(\frac{\partial (x^2y^2-1)}{\partial x}
+         - \frac{\partial (2xy^3)}{\partial y}\right)\middle/ (2xy^3)  = -\frac{2}{y} \right.
+    \end{align*}
+
+    故得积分因子$\mu (x) = y^{-2}$
+
+    从而有通积分
+    \begin{align*}
+        x^2y +  \frac{1}{y} = C
     \end{align*}
 \end{document}
