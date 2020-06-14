@@ -1,0 +1,166 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\title{第六周作业}
+\author{邓贤杰}
+\date{\today}
+\begin{document}
+    \maketitle
+    \paragraph*{1}
+    \subparagraph{(2)}
+    \begin{align*}
+        a\left(x \frac{\mathrm{d}y}{\mathrm{d}x} + 2y\right) = xy \frac{\mathrm{d}y}{\mathrm{d}x}
+    \end{align*}
+
+    若$xy \ne 0$，则
+
+    \begin{align*}
+        a\left(\frac{\mathrm{d}y}{y} + 2 \frac{\mathrm{d}x}{x} \right) &= \mathrm{d}y\\
+        \ln |x| &= \frac{y}{2a} - \frac{1}{2} \ln |y| + C_1, C_1 \in R\\
+        |x||y|^{1/2} &= e^{C_1}e^{\frac{y}{2a}} \\
+        x^2 |y|  &= e^{2C_1} e^{\frac{y}{a}} \text{即} x^2 y = Ce^{\frac{y}{a}} , C \ne 0\\
+    \end{align*}
+
+    检验$y=0$是原方程的一个特解，故$x^2 y  = Ce^{\frac{y}{a}}, C \in R$
+    \subparagraph*{(3)}
+    \begin{align*}
+        \sqrt{1+x^2} \mathrm{d}y - \sqrt{1-y^2} \mathrm{d}x &= 0 \\
+        \frac{\mathrm{d}x}{\sqrt{1+x^2}} &= \frac{\mathrm{d}y}{\sqrt{1-y^2} } \\
+        \ln(x+\sqrt{x^2+1}) &= \arcsin y + C 
+    \end{align*}
+    \subparagraph*{(5)}
+    \begin{align*}
+        (3x+5y)\mathrm{d}x + (4x+6y)\mathrm{d}y &= 0 \\
+        \frac{\mathrm{d}y}{\mathrm{d}x} &=-\frac{3x+5y}{4x+6y}  \\
+    \end{align*}
+    
+        令$t = \frac{y}{x}$则 $y' = xt'+t$
+        则
+    \begin{align*}
+        \frac{\mathrm{d}x}{x} &= \frac{4+6t}{-6t^2-9t-3}\mathrm{d}t \\ 
+         \frac{\mathrm{d}x}{x} &= -\frac{2}{3} \left( \frac{1}{2t+1} + \frac{1}{t+1} \right)\mathrm{d}t \\
+         \ln|x| + C_1 &= -\frac{2}{3} ( \frac{1}{2} \ln|2t+1|+\ln|t+1|) \\
+    \end{align*}
+        带入$t = \frac{y}{x}$  \\
+    \begin{align*}
+        \ln|x| + C_1 &= -\frac{2}{3} \left( \frac{1}{2} \ln|\frac{2y}{x} +1|+\ln| \frac{y}{x} +1|\right) \\
+    \end{align*}
+        也即$(x+2y)(x+y)^2 = C$
+    \paragraph*{(8)}
+    \begin{align*}
+        y' = (x+y+2)^2
+    \end{align*}
+    令$t=x+y+2$，则$t't'=1+y'$，则
+    \begin{align*}
+        t'-1 &= t^2
+        \frac{\mathrm{d}t}{t^2+1} &= \mathrm{d}x \\ 
+        \arctan t &= x + C \\
+        \arctan (x+y+2) &= x+C
+    \end{align*}
+    \paragraph*{2}
+    \subparagraph*{(1)}
+    \begin{align*}
+        \frac{\mathrm{d}x}{y} + \frac{4 \mathrm{d}y}{x} &= 0 \\
+        x \mathrm{d}x + 4y \mathrm{d}y &= 0\\
+        \frac{x^2}{2} + 2 y^2 &= C
+    \end{align*}
+
+    代入$y(4)=2$得$C=16$，故解为：
+    \begin{align*}
+        y &= \frac{1}{2} \sqrt{32-x^2} 
+    \end{align*}
+    \subparagraph*{(3)}
+    \begin{align*}
+        \sqrt{1+x^2} \frac{\mathrm{d}y}{\mathrm{d}x} &= xy^3 \\
+        \frac{x \mathrm{d}x}{\sqrt{1+x^2} } &= \frac{\mathrm{d}y}{y^3} \\ 
+        \sqrt{1+x^2}  &= -\frac{1}{2y^2} + C
+    \end{align*}
+
+    代入初值得$C=\frac{3}{2}$，故解为：
+    \begin{align*}
+        y^{-2}+2(1+x^2)^{1/2} = 3
+    \end{align*}
+
+    \paragraph*{3}
+    \subparagraph*{(1)}
+    \begin{align*}
+        xy' - y &= (x-1)e^x \\
+        y' - \frac{y}{x} &= \frac{x-1}{y} e^x
+    \end{align*}
+
+    齐次通解：
+    \begin{align*}
+        y^* = Cx
+    \end{align*}
+
+    令$y= u(x)x$，则：
+
+    \begin{align*}
+        u'(x) &= \frac{(x-1)e^x}{x^2} \\
+        u(x) &= \frac{e^x}{x} + C
+    \end{align*}
+
+    故通解为$y=e^x + Cx$
+
+    \subparagraph*{(4)}
+    \begin{align*}
+        y' + 2y = xe^{-x}
+    \end{align*}
+
+    齐次通解：
+    \begin{align*}
+        y^* = Ce^{-2x}
+    \end{align*}
+
+    令$y = u(x) e^{-2x}$，则
+
+    \begin{align*}
+        u'(x)e^{-2x} &= xe^{-x} \\
+        u'(x) &= xe^x \\
+        u(x) &= (x-1)e^x + C \\
+        \text{即} y &= (x-1)e^{-x} + Ce^{-2x}
+    \end{align*}
+
+    \paragraph*{12}
+    \subparagraph{(3)}
+    \begin{align*}
+        \frac{\partial e^y}{\partial y} = e^y \\
+        \frac{\partial (xe^y-2y)}{\partial x} = e^y
+    \end{align*}
+
+    是全微分方程，$\mathrm{d}(xe^y-y^2) = e^y \mathrm{d}x + (xe^y-2y)\mathrm{d}y$
+
+    故通积分：
+    \begin{align*}
+        xe^y-y^2 &= C
+    \end{align*}
+    
+    \subparagraph{(5)}
+    \begin{align*}
+        \frac{\partial (x+2y)}{\partial y} = 2 \\
+        \frac{\partial (2x+3y)}{\partial x} = 2
+    \end{align*}
+
+    是全微分方程，且
+    \begin{align*}
+        \mathrm{d}(\frac{x^2}{2} + \frac{3y^2}{2} + 2xy) = (x+2y)\mathrm{d}x + (2x+3y)\mathrm{d}y
+    \end{align*}
+
+    通积分为
+    \begin{align*}
+        \frac{x^2}{2} + \frac{3y^2}{2} + 2xy = C
+    \end{align*}
+
+    \paragraph*{16}
+    \subparagraph*{(4)}
+    \begin{align*}
+        \frac{\partial (3x^2y+2xy+y^3)}{\partial y} - 
+        \left. \left(\frac{\partial (x^2+y^2)}{\partial x} \right)\middle/ (x^2+y^2) = 3 \right.
+    \end{align*}
+    
+    故得积分因子$\mu (x) = e^{3x}$
+
+    从而有通积分
+    \begin{align*}
+        e^{3x}(3x^2y+y^3) = C
+    \end{align*}
+\end{document}
