@@ -5,7 +5,7 @@
 \date{\today}
 \begin{document}
     \maketitle
-    \paragraph*{2}
+    \paragraph*{P222.2}
     \subparagraph*{(1)}
     收敛，由比值判别法：
     \begin{align*}
@@ -36,4 +36,92 @@
         \left[\frac{(n+1)n}{(n+1)^2} \right]^{n^2} \left(\frac{n+2}{n+1} \right)^{2n+1} \\
         =& \frac{1}{3} e^{-1} e^2 = \frac{e}{3} < 1
     \end{align*}
+
+    \paragraph*{P234.1}
+    \subparagraph*{(1)}
+    绝对收敛.由于：
+    \begin{align*}
+        \left|(-1)^{n-1}\frac{1}{(2n)^2}\right| = \frac{1}{(2n)^2}  = \frac{1}{4n^2} 
+    \end{align*}
+
+    为收敛的p-级数
+
+    \subparagraph*{(2)}
+    当$p \le 1$时为条件收敛，$p>1$时为绝对收敛.
+    
+    a.$p > 1$：
+    \begin{align*}
+        \left|(-1)^{n+1}\frac{1}{(2n-1)^p}\right| = \frac{1}{(2n-1)^p}  < \frac{1}{2^p (n-1)^p} 
+    \end{align*}
+    
+    为收敛的p-级数
+
+    b.$p \le 1$，由莱布尼兹判别法：
+
+    $\frac{1}{(2n-1)^p}$单调减
+    
+    且
+    \begin{align*}
+        \lim \limits_{n \to \infty} \frac{1}{(2n-1)^p} = 0
+    \end{align*}
+
+    故级数收敛
+    
+    又
+    \begin{align*}
+        \left|(-1)^{n+1}\frac{1}{(2n-1)^p}\right| = \frac{1}{(2n-1)^p}  > \frac{1}{2^p n^p} 
+    \end{align*}
+
+    为发散的p-级数
+
+    故级数条件收敛
+
+    \subparagraph*{(4)}
+    条件收敛
+
+    由莱布尼兹判别法：
+
+    $$\frac{\sqrt{n}-1}{n}$$
+    
+    单调减
+    
+    且
+    \begin{align*}
+        \lim \limits_{n \to \infty} \frac{\sqrt{n}-1}{n} = 0
+    \end{align*}
+
+    故级数收敛
+    
+    又
+    \begin{align*}
+        \left|(-1)^{n}\frac{\sqrt{n}-1}{n}\right| = \frac{\sqrt{n}-1}{n} =\frac{1}{\sqrt{n}} - \frac{1}{n}  > 
+        \frac{2}{n} - \frac{1}{n} = \frac{1}{n} (n>4)
+    \end{align*}
+
+    为发散的p-级数
+
+    故级数条件收敛
+
+    \subparagraph*{(5)}
+    条件收敛
+
+    由莱布尼兹判别法：
+
+    $\frac{2n+1}{n(n+1)}$单调减
+    
+    且
+    \begin{align*}
+        \lim \limits_{n \to \infty} \frac{2n+1}{n(n+1)} = 0
+    \end{align*}
+
+    故级数收敛
+    
+    又
+    \begin{align*}
+        \left|(-1)^{n-1}\frac{2n+1}{n(n+1)}\right| = \frac{2n+1}{n(n+1)} = \frac{1}{n} + \frac{1}{n+1}
+    \end{align*}
+
+    为两发散的p-级数之和
+
+    故级数条件收敛
 \end{document}
