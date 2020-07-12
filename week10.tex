@@ -1,0 +1,150 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\title{第十周作业}
+\author{邓贤杰}
+\date{\today}
+\begin{document}
+    \maketitle
+    \paragraph*{P271(2)}
+    设和函数$S(x)$，$S(x)$在$(-1,1)$上可积，逐项求积得
+    \begin{align*}
+        \int_{0}^{x} S(x) \mathrm{d}x = \sum_{i=1}^{\infty} (-1)^{n-1}x^{2n-1} = \frac{x}{1+x^2} 
+    \end{align*}
+
+    故
+    \begin{align*}
+        S(x) = \frac{1-x^2}{(1+x^2)^2} , -1 < x < 1
+    \end{align*}
+
+    \paragraph*{P271(4)}
+    设和函数$S(x)$，$S(x)$在$(-1,1)$上可导，逐项求导后仍然是幂级数，故逐项求二阶导得
+    \begin{align*}
+        S''(x) = \sum_{i=1}^{\infty} 2(-1)^{n-1}x^{2n-2} = \frac{2}{1+x^2} 
+    \end{align*}
+
+    故
+    \begin{align*}
+        S'(x) &= 2\arctan x \\
+        S(x)  &= 2x\arctan x - \ln(1+x^2), -1 \le x \le 1
+    \end{align*}
+
+    \paragraph*{（上册）P297 1.}
+    \begin{align*}
+        f_l = f_x \cos \theta + f_y \sin \theta \\
+        f_x = 2x - y = 3 \\
+        f_y = 2y - x = 3\sqrt{3}
+    \end{align*}
+
+    \subparagraph*{(1)}
+    方向导数最大时，方向向量$(f_x, f_y)$
+    \begin{align*}
+        \theta = \arctan \frac{f_y}{f_x} = \frac{\pi}{3} 
+    \end{align*}
+
+    \subparagraph*{(2)}
+    方向导数最小时，方向向量$(-f_x, -f_y)$
+    \begin{align*}
+        \theta = \frac{\pi}{3} + \pi = \frac{4\pi}{3}  
+    \end{align*}
+    
+    \subparagraph*{(3)}
+    方向导数为0时，方向向量$(f_y, -f_x),(-f_y, f_x)$
+    \begin{align*}
+        \theta = \arctan \frac{-f_x}{f_y} = \frac{5\pi}{6}\text{或}\frac{11\pi}{6} 
+    \end{align*}
+
+    \paragraph*{2}
+
+    
+    方向向量$(3,4)$，故$\sin \varphi = 0.8, \cos \varphi = 0.6$
+    \begin{align*}
+        f_x = 3x^2 - 6xy + 3y^2 = 12 \\
+        f_y = -3x^2 + 6xy = -9 \\
+        f_l = f_x \cos \varphi + f_y \sin \varphi = 0
+    \end{align*}
+
+    \paragraph*{4}
+    由题意可知，$\cos \alpha = \cos \beta = \cos \gamma = 1/\sqrt{3} $
+    \begin{align*}
+        \nabla u = (y+z, x+z, x+y), \nabla u(2,1,3) = (4, 5, 3) \\
+        \frac{\partial u}{\partial l} = 12 / \sqrt{3} = 4\sqrt{3}
+    \end{align*}
+
+    考虑两个方向，得结果为$\pm 4\sqrt{3}$
+
+    \paragraph*{8}
+    \begin{align*}
+        \nabla f = (2x-2y+2xy^2, -2x+2x^2y) \\
+        \nabla f(1,1) = (2, 0) \\
+        f_l = 2cos\alpha
+    \end{align*}
+
+    最大的方向导数：$2$， 最小的：$-2$， 最大/最小方向：沿着x轴正方向/沿着x轴负方向
+
+    \paragraph*{（上册）P313 1}
+    \subparagraph*{(1)}
+    \begin{align*}
+        3x^2z + (x^3+3z^2x-2y) 
+        \frac{\partial z}{\partial x} +z^3 = 0 \\
+        \text{也即} \frac{\partial z}{\partial x} = 
+        -\frac{3x^2z+z^3}{x^3+3z^2x-2y} 
+    \end{align*}
+
+    \begin{align*}
+        (x^3 + 3z^2x-2y) \frac{\partial z}{\partial y} =
+        2z\\
+        \text{也即} \frac{\partial z}{\partial y} = 
+        \frac{2z}{x^3 + 3z^2x-2y} 
+    \end{align*}
+
+    \subparagraph*{(3)}
+    \begin{align*}
+        1 +  \frac{\partial z}{\partial x} - 
+        \varepsilon \cos z \frac{\partial z}{\partial x}
+        =  0\\
+        \text{也即} \frac{\partial z}{\partial x} = 
+        \frac{1}{\varepsilon \cos z - 1} 
+    \end{align*}
+    \begin{align*}
+        \frac{\partial z}{\partial y} - 
+        \varepsilon \cos z \frac{\partial z}{\partial y}
+        =  1\\
+        \text{也即} \frac{\partial z}{\partial y} = 
+        \frac{1}{1 - \varepsilon \cos z} 
+    \end{align*}
+
+    \subparagraph*{(3)}
+    \begin{align*}
+        (\cos x - y \sin z)\frac{\partial z}{\partial x}
+         + (\cos y -z \sin x) = 0 \\
+         \text{也即} \frac{\partial z}{\partial x}
+         = \frac{z \sin x - \cos y}{\cos x - y \sin z} \\
+         (\cos x - y \sin z)\frac{\partial z}{\partial y}
+         + (\cos z - x \sin y) = 0 \\
+         \text{也即} \frac{\partial z}{\partial y}
+         = \frac{x \sin y - \cos z}{\cos x - y \sin z} 
+    \end{align*}
+
+    \paragraph*{3}
+    \begin{align*}
+        \frac{\partial z}{\partial x} - y\sin xy
+        &= e^z \frac{\partial z}{\partial x} \\
+        \frac{\partial z}{\partial x} &= 
+        \frac{y\sin xy}{1-e^z} \\
+    \end{align*}
+        
+    \begin{align*}
+        \frac{\partial^2 z}{\partial x^2} &= 
+        \frac{y^2 \cos (xy) (1-e^z) +y \sin (xy) e^z \frac{\partial z}{\partial x}}{(1-e^z)^2} \\ 
+        &= \frac{y^2 \cos (xy) (1-e^z)^2 +y^2 \sin^2 (xy) e^z }{(1-e^z)^3} 
+    \end{align*}
+
+    \paragraph*{10}
+    
+    将参数方程表示的二元隐函数表示为一般二元隐函数有$x^2 + y^2 + z^2 = 1$，则
+    \begin{align*}
+        \frac{\partial z}{\partial x} = -\frac{x}{z} 
+    \end{align*}
+
+
+\end{document}
